@@ -25,3 +25,9 @@ a {
 .bg-blue {
   background-color: var(--brand-blue);
 }
+
+.main {
+  max-height: 100vh;
+  overflow-y: hidden;
+  color: var(--gray-300);
+}
