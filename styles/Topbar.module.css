@@ -1,0 +1,25 @@
+.topbar_container {
+  padding: 0.750rem 3.313rem 0.563rem 1.813rem;
+}
+
+.magnifying_glass_icon {
+  width: 14px;
+  height: 14px;
+}
+
+.search_input {
+  max-width: 54%;
+}
+
+.bell_icon {
+  width: 1.125em;
+  height: 1.125em;
+}
+
+.user_name {
+  font-size: 0.5rem;
+}
+
+.user_designation {
+  font-size: 0.438rem;
+}
