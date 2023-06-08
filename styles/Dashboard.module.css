@@ -1,0 +1,10 @@
+.main_content {
+  flex-basis: 81%;
+}
+
+.dynamic_content {
+  background-color: #F2F3F7;
+  border-radius: 18px 0px 10px;
+  height: calc(100vh - 63px);
+  padding: 2rem 1.5rem;
+}
