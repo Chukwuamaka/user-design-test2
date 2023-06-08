@@ -1,0 +1,50 @@
+.sidenav_container {
+  flex-basis: 19%;
+  padding-block: 1.125rem 2.094rem;
+}
+
+.navbar_nav {
+  height: calc(100vh - 63px);
+}
+
+.sidenav_scrollable {
+  flex-basis: calc(80% - 18px);
+}
+
+.sidenav_scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidenav_scrollable::-webkit-scrollbar-thumb {
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  background: var(--brand-blue);
+  background-clip: padding-box;
+  border-radius: 4px;
+}
+
+.sidenav_unscrollable {
+  flex-basis: min(140px, 17%);
+}
+
+.nav_link {
+  color: var(--gray-200);
+  font-size: 0.625rem;
+  letter-spacing: -0.075em;
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+}
+
+.nav_link.active {
+  color: white;
+  background-color: var(--brand-blue);
+}
+
+.nav_icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.750rem;
+}
+
+.nav_icon + span {
+  margin-top: 1px;
+}
