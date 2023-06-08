@@ -18,9 +18,9 @@ export default function Topbar() {
           </div>
         </div>
       </form>
-      <div className='d-flex align-items-center text-black'>
+      <div className='d-flex align-items-center text-black ms-2'>
         <BellIcon className={styles.bell_icon} />
-        <div className={'ms-5 d-flex align-items-center'}>
+        <div className={'ms-3 ms-sm-5 d-flex align-items-center'}>
           <Image src={anna_newman} alt='Anna Newman' width={24} height={24} />
           <div className='d-flex flex-column ms-2 fw-semibold'>
             <p className={`mb-0 ${styles.user_name}`}>Anna Newman</p>

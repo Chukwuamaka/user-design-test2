@@ -1,14 +1,14 @@
 .topbar_container {
-  padding: 0.750rem 3.313rem 0.563rem 1.813rem;
+  padding: 0.750rem 0.5rem 0.563rem 0.5rem;
+}
+
+.topbar_container > form {
+  max-width: 40%;
 }
 
 .magnifying_glass_icon {
   width: 14px;
   height: 14px;
-}
-
-.search_input {
-  max-width: 54%;
 }
 
 .bell_icon {
@@ -17,9 +17,15 @@
 }
 
 .user_name {
-  font-size: 0.5rem;
+  font-size: 0.675rem;
 }
 
 .user_designation {
-  font-size: 0.438rem;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .topbar_container {
+    padding: 0.750rem 3.313rem 0.563rem 1.813rem;
+  }
 }

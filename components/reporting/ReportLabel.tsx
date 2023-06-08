@@ -7,9 +7,9 @@ interface ReportLabelProps extends ReportLabelType {
 
 export default function ReportLabel({ label, value, active }: ReportLabelProps) {
   return (
-    <div className={`d-flex align-items-center me-4 ${styles.label_container}`}>
+    <div className={`d-flex align-items-center me-4 mb-2 mb-sm-0 ${styles.label_container}`}>
       <p className={`my-0 fw-semibold text-capitalize ${styles.label_text}`}>{label}</p>
-      <p className={`m-0 p-2 rounded bg-white ${styles.label_value} ${active === label ? styles.active : ''}`}>
+      <p className={`m-0 fw-semibold p-2 rounded bg-white ${styles.label_value} ${active === label ? styles.active : ''}`}>
         {value}
       </p>
     </div>

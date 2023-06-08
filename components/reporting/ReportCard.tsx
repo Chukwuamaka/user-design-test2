@@ -15,7 +15,7 @@ export default function ReportCard({ project, card_icon: CardIcon, icon_bg }: Re
   const { name, team, deadline, team_members, progress } = project;
 
   return (
-    <div className={`bg-white position-relative ${styles.report_card_container}`}>
+    <div className={`bg-white position-relative h-100 ${styles.report_card_container}`}>
       <div className={`position-absolute rounded-circle ${styles.card_icon}`}
         style={{backgroundColor: icon_bg, boxShadow: `0px 10px 11px -6px ${icon_bg}`}}
       >

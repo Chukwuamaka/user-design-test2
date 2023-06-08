@@ -22,15 +22,19 @@ export default function Sidenav() {
   const router = useRouter();
 
   return (
-    <nav className={`navbar navbar-expand-lg d-block ps-4 pe-2 ${styles.sidenav_container}`}>
+    <nav className={`navbar navbar-expand-md d-block ps-2 ps-md-4 pe-2 ${styles.sidenav_container}`}>
       <div className="w-100 mb-3">
-        <Link href='/dashboard' className='navbar-brand ms-4'>
+        <Link href='/dashboard' className='navbar-brand ms-2 ms-md-4'>
           <Image src={logo} alt='Compute logo' width={57} height={15} />
         </Link>
       </div>
+
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
       
-      <div className="mt-4">
-        <div className={`navbar-nav d-flex flex-column justify-between ${styles.navbar_nav}`}>
+      <div id="navbarSupportedContent" className="mt-4 collapse navbar-collapse">
+        <div className={`navbar-nav d-flex flex-column justify-between w-100 ${styles.navbar_nav}`}>
           <div className={`overflow-auto ${styles.sidenav_scrollable}`}>
             {sidenav_items.map((item, index) => {
               const { page_title, page_url, icon: Icon } = item;
